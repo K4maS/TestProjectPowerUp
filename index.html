@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" href="./img/prod.png" type="image/x-icon">
     <script src="timer.js" defer></script>
-    
+
     <!-- слайдер -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -259,44 +259,45 @@
                         <p class="order__timer-time" id="timer">
                             <span id="minute">30</span>:<span id="secunde">00</span>
                         </p>
-                        <!-- </div>Блок с фото и с ценой -->
-                        <div class="order__bottom flex">
-                            <div class="order__photo flex">
-                                <img src="./img/prod.png" alt="order__img" class="order__img">
-                                <div class="order__price flex">
-                                    <p class="order__old-price">10 000 рубей</p>
-                                    <p class="order__new-price">399 рубей</p>
+                    </div>
+                    <!-- Блок с фото и с ценой -->
+                    <div class="order__bottom flex">
+                        <div class="order__photo flex">
+                            <img src="./img/prod.png" alt="order__img" class="order__img">
+                            <div class="order__price flex">
+                                <p class="order__old-price">10 000 рубей</p>
+                                <p class="order__new-price">399 рубей</p>
+                            </div>
+                        </div>
+
+                        <!-- Форма отправки заявки -->
+                        <form action="" class="order__form flex">
+                            <label class="form__input-lable form__input-lable-name " for="name">
+                                <div class="form__label-text flex">
+                                    Введите имя:
+                                    <span class="form__example form__example-name">
+                                        Пример: Иван</span>
                                 </div>
 
-                                <!-- </div>Форма отправки заявки -->
-                                <form action="" class="order__form flex">
-                                    <label class="form__input-lable form__input-lable-name " for="name">
-                                        <div class="form__label-text flex">
-                                            Введите имя:
-                                            <span class="form__example form__example-name">
-                                                Пример: Иван</span>
-                                        </div>
+                                <input type="text text" name="name" class="form__input form__input-name input" required>
+                            </label>
 
-                                        <input type="text text" name="name" class="form__input form__input-name input"
-                                            required>
-                                    </label>
-
-                                    <label class="form__input-lable form__input-lable-phone" for="phone">
-                                        <div class="form__label-text flex">Введите номер:
-                                            <span class="form__example form__example-phone">
-                                                Пример: +79999999999
-                                        </div>
-                                        </span> <input type="number" name="phone"
-                                            class="form__input form__input-phone input" required>
-                                    </label>
+                            <label class="form__input-lable form__input-lable-phone" for="phone">
+                                <div class="form__label-text flex">Введите номер:
+                                    <span class="form__example form__example-phone">
+                                        Пример: +79999999999
+                                </div>
+                                </span> <input type="number" name="phone" class="form__input form__input-phone input"
+                                    required>
+                            </label>
 
 
-                                    <button class="form__btn btn btn-reset">Обратный звонок</button>
-                                </form>
-                            </div>
-
-                        </div>
+                            <button class="form__btn btn btn-reset">Обратный звонок</button>
+                        </form>
                     </div>
+
+                </div>
+            </div>
         </section>
 
 
