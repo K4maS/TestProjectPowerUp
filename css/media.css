@@ -1,0 +1,359 @@
+@media (max-width: 1281px) {
+    body {
+        min-width: 992px;
+    }
+
+    .container {
+        width: 1100px;
+    }
+
+    .promo__product {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1161px) {
+    .container {
+        width: 800px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .promo__product {
+        width: 200px;
+    }
+
+    .promo__right {
+        padding: 30px 30px 30px 60px;
+    }
+
+    .item__text {
+        font-size: 16px;
+    }
+
+    .reviews__block {
+        padding: 40px;
+        width: calc((100% - (30px*2)) / 2);
+    }
+
+    .reviews__button {
+        padding: 40px;
+        width: calc((100% - (30px*2)) / 5);
+    }
+
+    .promo2__left {
+        display: none;
+    }
+
+    .promo2__right {
+        width: 100%;
+    }
+
+    .order__img {
+        width: 200px;
+    }
+
+    .order__timer-text {
+        font-size: 40px;
+    }
+
+    .order__timer-time {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 993px) {
+    body {
+        min-width: 320px;
+    }
+
+    .container {
+        width: 700px;
+    }
+
+    .promo__left {
+        display: none;
+    }
+
+    .promo__right {
+        width: 100%;
+        height: 70%;
+        padding: 0;
+        background: transparent;
+
+    }
+
+    .promo__list {
+        margin-bottom: 30px;
+    }
+
+    .compos__center .compos__img {
+        width: 150px;
+    }
+
+    .compos__item {
+        width: 110px;
+        height: 110px;
+
+    }
+
+    .reviews__block {
+        padding: 20px;
+        width: calc((80% - (30px*2)));
+    }
+
+    .reviews__block .block__img {
+        width: 120px;
+    }
+
+    .reviews__button {
+        padding: 0px;
+        width: 20%;
+    }
+
+    .order__bottom {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .order__photo {
+        margin-bottom: 50px;
+    }
+
+    .order__title {
+        font-size: 60px;
+    }
+
+    .order__timer-time {
+        font-size: 50px;
+    }
+
+    .order__timer-text {
+        font-size: 20px;
+    }
+
+    .promo2__right {
+        padding: 30px;
+    }
+
+    .promo2__bottom {
+        padding: 30px;
+    }
+
+    .promo2__item {
+        font-size: 20px;
+    }
+
+    .order__form {
+        align-items: center;
+        width: 100%;
+    }
+
+    .input {
+        max-width: 500px;
+    }
+
+    .order__form .form__btn {
+        padding: 16px 40px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 769px) {
+    .container {
+        width: 450px;
+    }
+
+    body {
+        min-width: 320px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 17px;
+    }
+
+    .main-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .bg__video {
+        display: none;
+    }
+
+    .bg__img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .promo__bg {
+        padding-top: 65%;
+    }
+
+    .promo__right {
+        padding: 40px;
+    }
+
+    .compos__center .compos__img {
+        width: 100px;
+    }
+
+    .compos__item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .compos__item .item__text {
+        font-size: 12px;
+    }
+
+    .reviews__block {
+        padding: 20px;
+        width: calc((80% - (30px*2)));
+
+    }
+
+    .reviews__block:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .reviews__button {
+        padding: 0px;
+        width: 20%;
+        background-size: 30px;
+    }
+
+    .reviews__button-before {
+        margin-right: 20px;
+    }
+
+    .promo2__bottom {
+        padding: 20px;
+    }
+
+    .promo2__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo2__item {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .order__price {
+        width: 150px;
+        bottom: -20;
+    }
+
+    .order__old-price {
+        font-size: 15px;
+        padding-top: 11px;
+    }
+
+    .order__new-price {
+        font-size: 22px;
+    }
+    .order__form .form__label-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 300px;
+    }
+
+    body {
+        min-width: 280px;
+    }
+
+    .promo__bg {
+        padding-top: 75%;
+    }
+
+    .promo__right {
+        padding: 10px;
+    }
+
+    .input {
+        max-width: 280px;
+    }
+
+    .btn {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+
+    .promo,
+    .compos,
+    .reviews,
+    .promo2 {
+        margin-bottom: 30px;
+    }
+
+    .main-title {
+        font-size: 18px;
+    }
+
+    .header__link {
+        font-size: 25px;
+    }
+
+    .header__text {
+        font-size: 15px;
+    }
+
+
+    .reviews__block {
+        padding: 10px;
+        width: calc((80% - (30px*2)));
+
+    }
+
+    .reviews__block:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .reviews__button {
+        padding: 0px;
+        width: 10%;
+        background-size: 20px;
+    }
+
+    .reviews__block .block__name {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .reviews__block .block__text {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .promo2__right {
+        padding: 10px;
+    }
+
+    .promo2__text {
+        font-size: 15px;
+    }
+
+    .promo2__item {
+        font-size: 15px;
+        text-align: left;
+    }
+}
