@@ -2,6 +2,7 @@
 (() => {
 
     // функция таймера
+    // Принимает время в минутах и элемент, который нужно заменить таймером
     function setTimer(time, timerElement) {
 
         let firstOperation = true;
@@ -37,7 +38,9 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+        // Отрисовка таймера
         let timerElement = document.getElementById('timer');
+        
         let halfHour = 29;
 
         setTimer(halfHour, timerElement);

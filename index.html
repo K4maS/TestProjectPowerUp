@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LevelUp</title>
 
-
-
     <link rel="stylesheet" href="css/normolize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" href="./img/prod.png" type="image/x-icon">
     <script src="timer.js" defer></script>
+    
+    <!-- слайдер -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- Головная часть сайта с названием -->
     <header class="header">
         <div class="header-container flex">
             <a class="header__link" href="#">LevelUp</a>
@@ -32,6 +33,7 @@
         </div>
     </header>
     <main class="main">
+        <!-- Список с жифим фоном -->
         <section class="promo">
             <div class=" promo__bg">
                 <div class="overlay">
@@ -72,6 +74,7 @@
             </div>
 
         </section>
+        <!-- блок с составом из 3 столбцо -->
         <section class="compos">
             <div class="container">
                 <h2 class="main-title">
@@ -125,14 +128,13 @@
         <section class="reviews">
 
             <div class="container">
+                <!-- Слайдер с комментариями -->
                 <h2 class="main-title">
                     Sint consequatur consequuntur asperiores
                 </h2>
 
                 <div class="swiper reviews__blocks-area ">
 
-                    <!-- <button class="reviews__button reviews__button-before  btn-reset" id="reviews__button-before ">
-                    </button> -->
 
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -194,11 +196,12 @@
 
 
                 </div>
-                <!-- <button class="reviews__button reviews__button-afrer btn-reset"> </button> -->
+
             </div>
         </section>
 
         <section class="promo2 ">
+            <!-- Промо с доктором и текстом -->
             <div class="container wrapper">
                 <h2 class="main-title">
                     Sint consequatur consequuntur asperiores
@@ -232,7 +235,7 @@
 
                     </div>
                 </div>
-
+                <!-- список промо2 -->
                 <div class="promo2__bottom flex">
                     <ul class="promo2__list flex">
                         <li class="promo2__item">Натурален</li>
@@ -243,61 +246,62 @@
 
             </div>
         </section>
-
+        <!-- Блок с заказом -->
         <section class="order" id="order">
             <div class="container">
                 <div class="order__container flex">
                     <h1 class="order__title">
                         LevelUp
                     </h1>
+                    <!-- таймер -->
                     <div class="order__timer flex">
                         <p class="order__timer-text"> Успей купить по скидке!</p>
                         <p class="order__timer-time" id="timer">
                             <span id="minute">30</span>:<span id="secunde">00</span>
                         </p>
-                    </div>
-                    <div class="order__bottom flex">
-                        <div class="order__photo flex">
-                            <img src="./img/prod.png" alt="order__img" class="order__img">
-                            <div class="order__price flex">
-                                <p class="order__old-price">10 000 рубей</p>
-                                <p class="order__new-price">399 рубей</p>
+                        <!-- </div>Блок с фото и с ценой -->
+                        <div class="order__bottom flex">
+                            <div class="order__photo flex">
+                                <img src="./img/prod.png" alt="order__img" class="order__img">
+                                <div class="order__price flex">
+                                    <p class="order__old-price">10 000 рубей</p>
+                                    <p class="order__new-price">399 рубей</p>
+                                </div>
+
+                                <!-- </div>Форма отправки заявки -->
+                                <form action="" class="order__form flex">
+                                    <label class="form__input-lable form__input-lable-name " for="name">
+                                        <div class="form__label-text flex">
+                                            Введите имя:
+                                            <span class="form__example form__example-name">
+                                                Пример: Иван</span>
+                                        </div>
+
+                                        <input type="text text" name="name" class="form__input form__input-name input"
+                                            required>
+                                    </label>
+
+                                    <label class="form__input-lable form__input-lable-phone" for="phone">
+                                        <div class="form__label-text flex">Введите номер:
+                                            <span class="form__example form__example-phone">
+                                                Пример: +79999999999
+                                        </div>
+                                        </span> <input type="number" name="phone"
+                                            class="form__input form__input-phone input" required>
+                                    </label>
+
+
+                                    <button class="form__btn btn btn-reset">Обратный звонок</button>
+                                </form>
                             </div>
 
                         </div>
-                        <form action="" class="order__form flex">
-                            <label class="form__input-lable form__input-lable-name " for="name">
-                                <div class="form__label-text flex">
-                                    Введите имя:
-                                    <span class="form__example form__example-name">
-                                        Пример: Иван</span>
-                                </div>
-
-                                <input type="text text" name="name" class="form__input form__input-name input" required>
-                            </label>
-
-                            <label class="form__input-lable form__input-lable-phone" for="phone">
-                                <div class="form__label-text flex">Введите номер:
-                                    <span class="form__example form__example-phone">
-                                        Пример: +79999999999
-                                </div>
-
-                                </span> <input type="number" name="phone" class="form__input form__input-phone input"
-                                    required>
-                            </label>
-
-
-                            <button class="form__btn btn btn-reset">Обратный звонок</button>
-                        </form>
                     </div>
-
-                </div>
-            </div>
         </section>
 
 
     </main>
-
+    <!-- скрип слайдера -->
     <script>
         const swiper = new Swiper('.swiper', {
             // Optional parameters
