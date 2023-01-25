@@ -39,7 +39,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         let timerElement = document.getElementById('timer');
         let halfHour = 29;
-        
+
         setTimer(halfHour, timerElement);
     });
 

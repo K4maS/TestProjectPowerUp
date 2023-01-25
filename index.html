@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LevelUp</title>
 
+
+
     <link rel="stylesheet" href="css/normolize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" href="./img/prod.png" type="image/x-icon">
     <script src="timer.js" defer></script>
-    <script src="slider.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+
 </head>
 
 <body>
@@ -123,49 +129,72 @@
                     Sint consequatur consequuntur asperiores
                 </h2>
 
-                <div class="reviews__blocks-area flex">
+                <div class="swiper reviews__blocks-area ">
 
-                    <button class="reviews__button reviews__button-before  btn-reset" id="reviews__button-before ">
-                    </button>
+                    <!-- <button class="reviews__button reviews__button-before  btn-reset" id="reviews__button-before ">
+                    </button> -->
 
-                    <div class="reviews__block reviews__block-1 reviews__block--active block flex">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
 
-                        <img src="./img/review_photo1.jpg" alt="block-img" class="block__img">
-                        <h3 class="block__name">Иванов Иван Иванович</h3>
-                        <p class="block__text text ">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab deleniti consequuntur dolorem
-                            eaque? Sint consequatur consequuntur asperiores voluptates sed ut maiores soluta nesciunt
-                            consectetur, aperiam, a excepturi magni? Fugiat, quasi?
-                        </p>
+                        <div class="reviews__block reviews__block-1 swiper-slide flex">
+
+                            <img src="./img/review_photo1.jpg" alt="block-img" class="block__img">
+                            <h3 class="block__name">Иванов Иван Иванович</h3>
+                            <p class="block__text text ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab deleniti consequuntur
+                                dolorem
+                                eaque? Sint consequatur consequuntur asperiores voluptates sed ut maiores soluta
+                                nesciunt
+                                consectetur, aperiam, a excepturi magni? Fugiat, quasi?
+                            </p>
+
+                        </div>
+                        <div class="reviews__block reviews__block-2 swiper-slide flex">
+
+                            <img src="./img/review_photo2.jpg" alt="block-img" class="block__img">
+                            <h3 class="block__name">Lorem Dpsum Ddfg</h3>
+                            <p class="block__text text ">
+                                Ab deleniti consequuntur dolorem
+                                eaque? Sint consequatur consequuntur asperiores voluptates sed ut maiores soluta
+                                nesciunt
+                                consectetur, aperiam, a excepturi magni? Fugiat, quasi?
+                            </p>
+
+                        </div>
+                        <div class="reviews__block reviews__block-3 swiper-slide flex">
+
+                            <img src="./img/review_photo3.jpg" alt="block-img" class="block__img">
+                            <h3 class="block__name">Corem Spsus Sit</h3>
+                            <p class="block__text text ">
+                                Sit amet consectetur adipisicing elit. Ab deleniti consequuntur dolorem
+                                eaque? Sint consequatur consequuntur asperiores voluptates sed ut maiores soluta
+                                nesciunt
+                                consectetur, aperiam, a excepturi magni? Fugiat, quasi?
+                            </p>
+
+                        </div>
 
                     </div>
-                    <div class="reviews__block reviews__block-2 block flex">
+                    <!-- If we need pagination -->
 
-                        <img src="./img/review_photo2.jpg" alt="block-img" class="block__img">
-                        <h3 class="block__name">Lorem Dpsum Ddfg</h3>
-                        <p class="block__text text ">
-                            Ab deleniti consequuntur dolorem
-                            eaque? Sint consequatur consequuntur asperiores voluptates sed ut maiores soluta nesciunt
-                            consectetur, aperiam, a excepturi magni? Fugiat, quasi?
-                        </p>
+                    <div class="swiper-pagination"></div>
 
-                    </div>
-                    <div class="reviews__block reviews__block-3 block flex">
+                    <!-- If we need navigation buttons -->
 
-                        <img src="./img/review_photo3.jpg" alt="block-img" class="block__img">
-                        <h3 class="block__name">Corem Spsus Sit</h3>
-                        <p class="block__text text ">
-                            Sit amet consectetur adipisicing elit. Ab deleniti consequuntur dolorem
-                            eaque? Sint consequatur consequuntur asperiores voluptates sed ut maiores soluta nesciunt
-                            consectetur, aperiam, a excepturi magni? Fugiat, quasi?
-                        </p>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-                    </div>
+                    <!-- If we need scrollbar -->
 
-                    <button class="reviews__button reviews__button-afrer btn-reset"> </button>
+
+
+
+
 
                 </div>
-
+                <!-- <button class="reviews__button reviews__button-afrer btn-reset"> </button> -->
             </div>
         </section>
 
@@ -224,7 +253,7 @@
                     <div class="order__timer flex">
                         <p class="order__timer-text"> Успей купить по скидке!</p>
                         <p class="order__timer-time" id="timer">
-                            30:00
+                            <span id="minute">30</span>:<span id="secunde">00</span>
                         </p>
                     </div>
                     <div class="order__bottom flex">
@@ -241,14 +270,14 @@
                                 <div class="form__label-text flex">
                                     Введите имя:
                                     <span class="form__example form__example-name">
-                                        Пример: Имя Фамилия Отчество</span>
+                                        Пример: Иван</span>
                                 </div>
 
                                 <input type="text text" name="name" class="form__input form__input-name input" required>
                             </label>
 
                             <label class="form__input-lable form__input-lable-phone" for="phone">
-                                <div class="form__label-text flex">Введите ноиер тетефона:
+                                <div class="form__label-text flex">Введите номер:
                                     <span class="form__example form__example-phone">
                                         Пример: +79999999999
                                 </div>
@@ -268,6 +297,27 @@
 
 
     </main>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            passiveListeners: true,
+
+
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+
+
+        });
+    </script>
 
 </body>
 
